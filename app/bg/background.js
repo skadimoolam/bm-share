@@ -43,8 +43,6 @@ function new_note(snapshot) {
     msg = snapshot.val()[key].name;
     url = snapshot.val()[key].url;
   }
-  // console.log(msg);
-  // console.log(typeof msg);
   var id = {
     type: "basic",
     title: "New Bookmark Added",
@@ -61,23 +59,5 @@ function new_note(snapshot) {
     });
   });
 };
-
-// chrome.windows.getAll({populate: true}, function(windows) {
-//   windows = windows[0].tabs;
-//   for (var i = 0; i < windows.length; i++) {
-//     var
-//       windowUrl = windows[i].url,
-//       windowId = windows[i].id;
-
-//     console.log(windowUrl);
-//     chrome.pageAction.show(windowId);
-//     // if () {};
-//     chrome.pageAction.setIcon({tabId: windowId, path: "../icon_black.png"});
-//   };
-// });
-
-// chrome.pageAction.onClicked.addListener(function(tab) {
-//   chrome.pageAction.setIcon({tabId: tab.id, path: "../icon.png"});
-// })
   
 }(chrome))
