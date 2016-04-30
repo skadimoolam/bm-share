@@ -3,7 +3,7 @@ import sys, os
 
 def print_help():
 	print('''
-lasdkjflksdjf
+py boot.py <FIREBASE_APP_URL_REFERANCE>
 	''')
 
 def main():
